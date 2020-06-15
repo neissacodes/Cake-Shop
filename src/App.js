@@ -12,6 +12,7 @@ class App extends Component{
     <Provider store={store}>
       <div className="App">
         <ShopContainer />
+        <IceCreamContainer />
       </div>
     </Provider>
   );
