@@ -2,12 +2,7 @@ import React, { Component } from 'react';
 import { buyCake } from '../redux';
 import { connect } from 'react-redux';
 
-class ShopContainer extends Component {
-  constructor(props){
-    super(props);
-  }
-
-  render() {
+function ShopContainer (props) {
     return (
       <div>
         <h2> Number of Cakes = {props.numberOfCakes} </h2>
@@ -15,11 +10,11 @@ class ShopContainer extends Component {
       </div>
     );
   }
-}
+
 
 const mapStateToProps = state => {
   return {
-    numberOfCakes: state.numberOfCakes;
+    numberOfCakes: state.numberOfCakes
   }
 }
 

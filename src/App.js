@@ -3,7 +3,7 @@ import './App.css';
 import { Provider } from 'react-redux';
 
 import ShopContainer from './components/ShopContainer';
-import store './redux/store';
+import store from  './redux/store';
 
 
 class App extends Component{
